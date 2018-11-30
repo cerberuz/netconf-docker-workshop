@@ -1,0 +1,15 @@
+#Descargamos imagen base
+FROM alpine
+
+#Insertamos entrypoint
+#COPY ./docker-entrypoint.sh /
+COPY ./do-stuff-then-ping.sh /
+
+#probamos con entrypoint + CMD y luego solo entrypoint
+#ENTRYPOINT ["/docker-entrypoint.sh"]
+ENTRYPOINT ["/do-stuff-then-ping.sh"]
+
+
+
+#ejecutamos CMD
+#CMD ["ping", "8.8.8.8"]

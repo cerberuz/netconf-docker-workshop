@@ -15,7 +15,7 @@ RUN pip install --trusted-host pypi.python.org -r requirements.txt
 EXPOSE 80
 
 # Definir variable de entorno con el nombre del equipo
-ENV NAME Sodimac
+ENV NAME miEquipo
 
 # ejecutar el archivo app.py cuando el container inicie
 CMD ["python", "app.py"]
