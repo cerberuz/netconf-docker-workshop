@@ -1,0 +1,16 @@
+version: '3.1'  # si la version no se especifica asume por defecto V1. se recomienda minimo v2
+
+services:  # definicion del multi-container, equivalente a docker run
+  servicename: # nombre para identificar el servicio.sirve como DNS para identificar al servicio dentro de la red
+    image: # define la imagen base para el servicio. Se puede reemplazar por el build.
+    command: # Opcional, reemplaza el CMD por defecto definido en la imagen base
+    environment: # Opcional, define variables de entorno para el servicio
+    volumes: # Opcional, define los volumenes y puntos de montaje utilizados en el servicio
+  servicename2:
+
+volumes: # Opcional, se definen y crean los volumenes necesarios para los servicios
+
+networks: # Opcional, se definen y crean las interfaces de red para los servicios
+
+
+
