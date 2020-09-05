@@ -1,5 +1,5 @@
 # Usar el runtime oficial de Python 2.7 slim  como imagen padre
-FROM python:2.7-slim
+FROM python:3.7-slim
 
 # Definir el working directory en /app
 WORKDIR /app
